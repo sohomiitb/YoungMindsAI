@@ -3,45 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Educator - Learn AI & Coding</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sohom Mandal - AI Educator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* All CSS goes here (same as your previous shared style) */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: white;
+    }
+
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #f9ca24);
+      background-size: 300% 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 4s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to AI Educator</h1>
+    <h1>AI Educator</h1>
     <p>Empowering students (Grade 7–12) with AI & Coding skills</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm [Your Name], an experienced AI educator dedicated to making AI and coding fun and accessible for middle and high school students. </p>
+    <p>Hello! I'm <strong>Sohom Mandal</strong>, an experienced AI educator and data science professional with a strong academic and industry background. I am an IIT Bombay alumnus with a PhD in Civil Engineering and currently pursuing my MBA at the Rotman School of Management, University of Toronto. I am also a Data Analytics Professor at Northeastern University.</p>
+    <p>With over a decade of experience in teaching and industry, I blend academic excellence with real-world expertise to make AI and coding both exciting and accessible for students in Grades 7 to 12. My mission is to unlock young minds' potential and spark creativity in our AI-driven future.</p>
   </section>
 
   <section id="services">
     <h2>What I Offer</h2>
     <ul>
       <li>✨ Interactive AI Workshops for Grades 7–12</li>
-      <li>💻 Beginner to Advanced Coding Classes (Python, Scratch, JavaScript)</li>
-      <li>🤖 AI & Machine Learning Basics for Young Minds</li>
-      <li>🎓 Project-Based Learning and Competitions</li>
+      <li>💻 Coding Classes (Scratch, Python, JavaScript)</li>
+      <li>🤖 AI & Machine Learning Basics</li>
+      <li>🎓 Project-Based Learning for Portfolios & Competitions</li>
     </ul>
+  </section>
+
+  <section id="ai-demo">
+    <h2>Experience AI in Action!</h2>
+    <div>
+      <p><strong>Student:</strong> How does machine learning work?</p>
+      <p><strong>AI:</strong> Imagine teaching a computer just like you'd teach a child — by showing examples!</p>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Interested in enrolling? Send me an email or reach out below!</p>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+    <p>Ready to start your AI journey? Fill out the form below, and I’ll get in touch!</p>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="grade" placeholder="Student's Grade Level" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Tell me about your goals..." required></textarea>
+      </div>
+      <button type="submit">Send Message 🚀</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 AI Educator | Inspiring Young Innovators</p>
+    <p>&copy; 2025 Sohom Mandal | AI Educator | Inspiring Young Innovators</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
