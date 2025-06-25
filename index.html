@@ -6,10 +6,58 @@
   <title>My Simple App</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<section id="services">
+    <div class="section-card">
+      <h2>What I Offer</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <span class="service-icon">✨</span>
+          <h3>Interactive AI Workshops</h3>
+          <p>Hands-on workshops for Grades 7–12 exploring machine learning, neural networks, and AI ethics</p>
+        </div>
+        <div class="service-item">
+          <span class="service-icon">💻</span>
+          <h3>Coding Classes</h3>
+          <p>From Scratch to Python to JavaScript - building programming foundations with real projects</p>
+        </div>
+        <div class="service-item">
+          <span class="service-icon">🤖</span>
+          <h3>AI & ML Basics</h3>
+          <p>Making complex AI concepts simple and engaging for young minds through interactive learning</p>
+        </div>
+        <div class="service-item">
+          <span class="service-icon">🎓</span>
+          <h3>Project-Based Learning</h3>
+          <p>Build real AI projects, participate in competitions, and create portfolios for college applications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 <body>
   <h1>Hello from Netlify!</h1>
   <button onclick="sayHello()">Click Me!</button>
 
   <script src="script.js"></script>
 </body>
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
+  
+  <label>Your Name:<br>
+    <input type="text" name="name" required>
+  </label><br><br>
+
+  <label>Your Email:<br>
+    <input type="email" name="email" required>
+  </label><br><br>
+
+  <label>Message:<br>
+    <textarea name="message" rows="5" required></textarea>
+  </label><br><br>
+
+  <button type="submit">Send Message</button>
+</form>
+
 </html>
