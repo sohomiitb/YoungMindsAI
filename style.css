@@ -23,9 +23,15 @@ h2 {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
   gap: 2rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* stack on smaller screens */
+  }
 }
 
 .service-item {
