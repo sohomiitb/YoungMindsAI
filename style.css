@@ -774,7 +774,7 @@ h2 {
   .about-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .about-text-section {
