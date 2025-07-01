@@ -382,29 +382,334 @@ header a[style*="background: transparent"]:hover {
     <div class="section-card">
       <h2>What We Offer</h2>
       <div class="services-grid">
-        <div class="service-item">
-          <span class="service-icon">✨</span>
-          <h3>Interactive AI Workshops</h3>
-          <p>Hands-on workshops for Grades 7–12 exploring machine learning, neural networks, and AI ethics</p>
+        
+        <!-- Interactive AI Workshops Card -->
+        <div class="service-flip-card" onclick="flipCard(this)">
+          <div class="service-flip-inner">
+            <!-- Front Side -->
+            <div class="service-item service-front">
+              <span class="service-icon">✨</span>
+              <h3>Interactive AI Workshops</h3>
+              <p>Hands-on workshops for Grades 7–12 exploring machine learning, neural networks, and AI ethics</p>
+              <div class="flip-indicator">Click to learn more</div>
+            </div>
+            <!-- Back Side -->
+            <div class="service-item service-back">
+              <span class="service-icon">📚</span>
+              <h3>Workshop Details</h3>
+              <div class="service-details">
+                <div class="detail-item">
+                  <strong>Duration:</strong> 2-4 hours per session
+                </div>
+                <div class="detail-item">
+                  <strong>Group Size:</strong> 8-12 students
+                </div>
+                <div class="detail-item">
+                  <strong>Topics:</strong> Machine Learning, Neural Networks, AI Ethics
+                </div>
+                <div class="detail-item">
+                  <strong>Tools:</strong> Python, Scratch for Machine Learning
+                </div>
+                <div class="detail-item">
+                  <strong>Outcome:</strong> Build your first AI model
+                </div>
+              </div>
+              <div class="flip-indicator">Click to go back</div>
+            </div>
+          </div>
         </div>
-        <div class="service-item">
-          <span class="service-icon">💻</span>
-          <h3>Coding Classes</h3>
-          <p>From Scratch to Python to JavaScript - building programming foundations with real projects</p>
+
+        <!-- Coding Classes Card -->
+        <div class="service-flip-card" onclick="flipCard(this)">
+          <div class="service-flip-inner">
+            <!-- Front Side -->
+            <div class="service-item service-front">
+              <span class="service-icon">💻</span>
+              <h3>Coding Classes</h3>
+              <p>From Scratch to Python to JavaScript - building programming foundations with real projects</p>
+              <div class="flip-indicator">Click to learn more</div>
+            </div>
+            <!-- Back Side -->
+            <div class="service-item service-back">
+              <span class="service-icon">⚡</span>
+              <h3>Coding Program</h3>
+              <div class="service-details">
+                <div class="detail-item">
+                  <strong>Languages:</strong> Scratch, Python, JavaScript
+                </div>
+                <div class="detail-item">
+                  <strong>Level:</strong> Beginner to Intermediate
+                </div>
+                <div class="detail-item">
+                  <strong>Projects:</strong> Games, Apps, Websites
+                </div>
+                <div class="detail-item">
+                  <strong>Schedule:</strong> Weekly 2-hour sessions
+                </div>
+                <div class="detail-item">
+                  <strong>Portfolio:</strong> 5+ completed projects
+                </div>
+              </div>
+              <div class="flip-indicator">Click to go back</div>
+            </div>
+          </div>
         </div>
-        <div class="service-item">
-          <span class="service-icon">🤖</span>
-          <h3>AI & ML Basics</h3>
-          <p>Making complex AI concepts simple and engaging for young minds through interactive learning</p>
+
+        <!-- AI & ML Basics Card -->
+        <div class="service-flip-card" onclick="flipCard(this)">
+          <div class="service-flip-inner">
+            <!-- Front Side -->
+            <div class="service-item service-front">
+              <span class="service-icon">🤖</span>
+              <h3>AI & ML Basics</h3>
+              <p>Making complex AI concepts simple and engaging for young minds through interactive learning</p>
+              <div class="flip-indicator">Click to learn more</div>
+            </div>
+            <!-- Back Side -->
+            <div class="service-item service-back">
+              <span class="service-icon">🧠</span>
+              <h3>AI Fundamentals</h3>
+              <div class="service-details">
+                <div class="detail-item">
+                  <strong>Concepts:</strong> ML Algorithms, Data Science, AI Applications
+                </div>
+                <div class="detail-item">
+                  <strong>Approach:</strong> Visual learning with real examples
+                </div>
+                <div class="detail-item">
+                  <strong>Practice:</strong> Hands-on exercises and simulations
+                </div>
+                <div class="detail-item">
+                  <strong>Age Group:</strong> 12-18 years
+                </div>
+                <div class="detail-item">
+                  <strong>Certification:</strong> AI Basics Certificate
+                </div>
+              </div>
+              <div class="flip-indicator">Click to go back</div>
+            </div>
+          </div>
         </div>
-        <div class="service-item">
-          <span class="service-icon">🎓</span>
-          <h3>Project-Based Learning</h3>
-          <p>Build real AI projects, participate in competitions, and create portfolios for college applications</p>
+
+        <!-- Project-Based Learning Card -->
+        <div class="service-flip-card" onclick="flipCard(this)">
+          <div class="service-flip-inner">
+            <!-- Front Side -->
+            <div class="service-item service-front">
+              <span class="service-icon">🎓</span>
+              <h3>Project-Based Learning</h3>
+              <p>Build real AI projects, participate in competitions, and create portfolios for college applications</p>
+              <div class="flip-indicator">Click to learn more</div>
+            </div>
+            <!-- Back Side -->
+            <div class="service-item service-back">
+              <span class="service-icon">🏆</span>
+              <h3>Project Program</h3>
+              <div class="service-details">
+                <div class="detail-item">
+                  <strong>Projects:</strong> Chatbots, Image Recognition, Data Analysis
+                </div>
+                <div class="detail-item">
+                  <strong>Competitions:</strong> Science fairs, AI competitions
+                </div>
+                <div class="detail-item">
+                  <strong>Portfolio:</strong> Professional showcase for college apps
+                </div>
+                <div class="detail-item">
+                  <strong>Mentorship:</strong> One-on-one project guidance
+                </div>
+                <div class="detail-item">
+                  <strong>Duration:</strong> 3-6 months per project
+                </div>
+              </div>
+              <div class="flip-indicator">Click to go back</div>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
+
+  <style>
+  /* Flip Card Styles */
+  .service-flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .service-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .service-flip-card.flipped .service-flip-inner {
+    transform: rotateY(180deg);
+  }
+
+  .service-front, .service-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .service-front {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .service-back {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* Service Details Styling */
+  .service-details {
+    width: 100%;
+    max-width: 280px;
+    margin: 1rem 0;
+  }
+
+  .detail-item {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .detail-item strong {
+    color: #ffd700;
+    font-weight: 600;
+  }
+
+  /* Flip Indicator */
+  .flip-indicator {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    opacity: 0.7;
+    padding: 0.3rem 0.8rem;
+    background: rgba(255,255,255,0.2);
+    border-radius: 12px;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+  }
+
+  /* Enhanced Service Icon for Back */
+  .service-back .service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .service-front .service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  /* Hover Effects */
+  .service-flip-card:hover .service-flip-inner {
+    transform: scale(1.02);
+  }
+
+  .service-flip-card.flipped:hover .service-flip-inner {
+    transform: rotateY(180deg) scale(1.02);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-flip-card {
+      height: 350px;
+    }
+    
+    .service-front, .service-back {
+      padding: 1.5rem;
+    }
+    
+    .detail-item {
+      padding: 0.5rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .service-flip-card {
+      height: 320px;
+    }
+    
+    .service-front, .service-back {
+      padding: 1rem;
+    }
+    
+    .service-details {
+      max-width: 100%;
+    }
+  }
+
+  /* Accessibility */
+  .service-flip-card:focus {
+    outline: 2px solid #ffd700;
+    outline-offset: 4px;
+  }
+
+  /* Animation for smooth transitions */
+  .service-flip-card {
+    transition: all 0.3s ease;
+  }
+  </style>
+
+  <script>
+  function flipCard(card) {
+    card.classList.toggle('flipped');
+  }
+
+  // Add keyboard accessibility
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      const focusedCard = document.activeElement;
+      if (focusedCard.classList.contains('service-flip-card')) {
+        e.preventDefault();
+        flipCard(focusedCard);
+      }
+    }
+  });
+
+  // Add tabindex for keyboard navigation
+  document.querySelectorAll('.service-flip-card').forEach((card, index) => {
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', `Flip card ${index + 1} to see more details`);
+  });
+</script>
 
   <!-- Videos Section -->
   <section id="videos" class="video-section">
