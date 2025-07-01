@@ -377,6 +377,7 @@ header a[style*="background: transparent"]:hover {
 </style>
 
 
+    <!-- Services Section -->
   <!-- Services Section -->
   <section id="services">
     <div class="section-card">
@@ -536,7 +537,7 @@ header a[style*="background: transparent"]:hover {
   .service-flip-card {
     background-color: transparent;
     width: 100%;
-    height: 400px;
+    height: 450px;
     perspective: 1000px;
     cursor: pointer;
   }
@@ -578,30 +579,36 @@ header a[style*="background: transparent"]:hover {
     background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
     color: white;
     transform: rotateY(180deg);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
   }
 
   /* Service Details Styling */
   .service-details {
     width: 100%;
-    max-width: 280px;
+    max-width: 100%;
     margin: 1rem 0;
+    overflow-y: auto;
+    max-height: 250px;
   }
 
   .detail-item {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.2);
     backdrop-filter: blur(10px);
-    padding: 0.7rem;
-    margin: 0.5rem 0;
-    border-radius: 8px;
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    border-radius: 10px;
     text-align: left;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    border: 1px solid rgba(255,255,255,0.2);
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
 
   .detail-item strong {
-    color: #ffd700;
-    font-weight: 600;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-size: 1.05rem;
   }
 
   /* Flip Indicator */
@@ -648,7 +655,7 @@ header a[style*="background: transparent"]:hover {
   /* Responsive Design */
   @media (max-width: 768px) {
     .service-flip-card {
-      height: 350px;
+      height: 400px;
     }
     
     .service-front, .service-back {
@@ -656,22 +663,46 @@ header a[style*="background: transparent"]:hover {
     }
     
     .detail-item {
-      padding: 0.5rem;
-      font-size: 0.85rem;
+      padding: 0.7rem;
+      font-size: 0.95rem;
+      margin: 0.5rem 0;
+    }
+    
+    .detail-item strong {
+      font-size: 1rem;
+    }
+    
+    .service-details {
+      max-height: 220px;
     }
   }
 
   @media (max-width: 480px) {
     .service-flip-card {
-      height: 320px;
+      height: 380px;
     }
     
     .service-front, .service-back {
-      padding: 1rem;
+      padding: 1.2rem;
     }
     
     .service-details {
-      max-width: 100%;
+      max-height: 200px;
+    }
+    
+    .detail-item {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+      margin: 0.4rem 0;
+    }
+    
+    .detail-item strong {
+      font-size: 0.95rem;
+    }
+    
+    .service-back h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
     }
   }
 
@@ -709,7 +740,8 @@ header a[style*="background: transparent"]:hover {
     card.setAttribute('role', 'button');
     card.setAttribute('aria-label', `Flip card ${index + 1} to see more details`);
   });
-</script>
+  </script>
+
 
   <!-- Videos Section -->
   <section id="videos" class="video-section">
