@@ -805,11 +805,26 @@ header a[style*="background: transparent"]:hover {
     </div>
   </section>
 <!-- Professional Services & Pricing Section -->
-  <section id="pricing" class="pricing-section" style="padding: 4rem 0; background: linear-gradient(135deg, #f8f9ff 0%, #e6f3ff 100%);">
-    <div class="section-card" style="max-width: 1000px; margin: 0 auto; padding: 3rem; background: white; border-radius: 20px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
-      <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1rem;">Professional Tutoring Services</h2>
-      <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;">Comprehensive AI and Data Science education programs tailored for every learning level</p>
-      
+<section id="pricing" class="pricing-section" style="padding: 4rem 0; background: linear-gradient(135deg, #f8f9ff 0%, #e6f3ff 100%);">
+  <div class="section-card" style="max-width: 1000px; margin: 0 auto; padding: 3rem; background: white; border-radius: 20px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: center; font-size: 2.5rem; color: #2c3e50; margin-bottom: 1rem;">Professional Tutoring Services</h2>
+    <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;">Comprehensive AI and Data Science education programs tailored for every learning level</p>
+    
+    <!-- Syllabus Tabs -->
+    <div style="margin-bottom: 2.5rem;">
+      <div id="syllabus-tabs" style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem;">
+        <button onclick="showSyllabus('grade6')" id="tab-grade6" style="padding: 0.7rem 2rem; border: none; border-radius: 20px; background: #667eea; color: #fff; font-weight: 600; cursor: pointer; font-size: 1rem;">Grade 6 Syllabus</button>
+        <button onclick="showSyllabus('grade78')" id="tab-grade78" style="padding: 0.7rem 2rem; border: none; border-radius: 20px; background: #e6e6e6; color: #2c3e50; font-weight: 600; cursor: pointer; font-size: 1rem;">Grade 7-8 Syllabus</button>
+      </div>
+      <div id="syllabus-content" style="text-align: center;">
+        <div id="syllabus-grade6" style="display: block;">
+          <a href="doc/YoungMindsAI_Grade_6_syllabus.pdf" target="_blank" style="display: inline-block; background: #3b82f6; color: #fff; padding: 0.8rem 2rem; border-radius: 25px; font-weight: 600; text-decoration: none; margin-bottom: 0.5rem;">Download Grade 6 Syllabus (PDF)</a>
+        </div>
+        <div id="syllabus-grade78" style="display: none;">
+          <a href="doc/YoungMindsAI_Grade_7_8_syllabus.pdf" target="_blank" style="display: inline-block; background: #3b82f6; color: #fff; padding: 0.8rem 2rem; border-radius: 25px; font-weight: 600; text-decoration: none; margin-bottom: 0.5rem;">Download Grade 7-8 Syllabus (PDF)</a>
+        </div>
+      </div>
+    </div>      
       <!-- Group Tutoring Section -->
       <div class="pricing-category" style="margin-bottom: 3rem;">
         <h3 style="color: #3b82f6; font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center; position: relative;">
@@ -1139,5 +1154,15 @@ header a[style*="background: transparent"]:hover {
       }
     }
   </style>
+  <script>
+function showSyllabus(tab) {
+  document.getElementById('syllabus-grade6').style.display = tab === 'grade6' ? 'block' : 'none';
+  document.getElementById('syllabus-grade78').style.display = tab === 'grade78' ? 'block' : 'none';
+  document.getElementById('tab-grade6').style.background = tab === 'grade6' ? '#667eea' : '#e6e6e6';
+  document.getElementById('tab-grade6').style.color = tab === 'grade6' ? '#fff' : '#2c3e50';
+  document.getElementById('tab-grade78').style.background = tab === 'grade78' ? '#667eea' : '#e6e6e6';
+  document.getElementById('tab-grade78').style.color = tab === 'grade78' ? '#fff' : '#2c3e50';
+}
+</script>
 </body>
 </html>
