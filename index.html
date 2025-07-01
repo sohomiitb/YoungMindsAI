@@ -52,29 +52,33 @@
           <div class="header-line"></div>
         </div>
         
-        <div class="typing-container">
-          <div class="typing-text" id="about-typing-text"></div>
-          <div class="typing-cursor">|</div>
+        <div class="about-description" style="margin: 2rem 0; line-height: 1.7; color: #555; font-size: 1.1rem;">
+          <p style="margin-bottom: 1.5rem;">
+            I am an experienced educator with over <strong>15 years of teaching and industry expertise</strong>, specializing in AI and data science. I provide tailored instruction and solutions to help both university and school students master complex topics through engaging, hands-on learning.
+          </p>
+          <p style="margin-bottom: 0;">
+            My goal is to make AI and data science <em>accessible and practical</em>, empowering students with the skills they need to succeed in an increasingly digital world.
+          </p>
         </div>
         
-        <div class="stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 18px;">
-        <div class="stat-item" style="text-align: center;">
-          <div class="stat-number">10+</div>
-          <div class="stat-label">Years Experience</div>
+        <div class="stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin: 2rem 0;">
+          <div class="stat-item" style="text-align: center;">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item" style="text-align: center;">
+            <div class="stat-number">300+</div>
+            <div class="stat-label">Students Taught</div>
+          </div>
+          <div class="stat-item" style="text-align: center;">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">AI Projects</div>
+          </div>
+          <div class="stat-item" style="text-align: center;">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Universities</div>
+          </div>
         </div>
-        <div class="stat-item" style="text-align: center;">
-          <div class="stat-number">300+</div>
-          <div class="stat-label">Students Taught</div>
-        </div>
-        <div class="stat-item" style="text-align: center;">
-          <div class="stat-number">50+</div>
-          <div class="stat-label">AI Projects</div>
-        </div>
-        <div class="stat-item" style="text-align: center;">
-          <div class="stat-number">3</div>
-          <div class="stat-label">Universities</div>
-        </div>
-      </div>
         
         <div class="interaction-buttons">
           <a class="btn-primary" href="doc/sohom-mandal-cv.pdf" download>📄 Download CV</a>
@@ -84,6 +88,42 @@
     </div>
   </div>
 </section>
+
+<style>
+/* About section enhancements */
+.about-description p {
+  text-align: justify;
+}
+
+.about-description strong {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.about-description em {
+  color: #667eea;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+  
+  .about-description {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>
 
 
   <!-- Services Section -->
